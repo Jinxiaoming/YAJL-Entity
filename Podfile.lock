@@ -1,13 +1,16 @@
 PODS:
-  - yajl (1.0.12)
-  - yajl-objc (0.2.27):
-    - yajl (~> 1.0.11)
+  - YAJLO (0.3.3)
 
 DEPENDENCIES:
-  - yajl-objc
+  - YAJLO
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - YAJLO
 
 SPEC CHECKSUMS:
-  yajl: e435f86f7429fe047dff3314608fb775defd8e09
-  yajl-objc: fe4ce4868434a4661fb446ba4400162ab48310cd
+  YAJLO: 815b1709d78f28fcef8ad6daf9a1c20dc5c1ff6b
 
-COCOAPODS: 0.37.1
+PODFILE CHECKSUM: e370758d7efe022bc6598074c2a0f4d03d6b595d
+
+COCOAPODS: 1.5.3

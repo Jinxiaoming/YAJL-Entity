@@ -1,26 +1,27 @@
 {
-  "name": "YAJL-Entity",
-  "version": "1.0.3",
+  "name": "YAJL-Entity-V2",
+  "version": "1.1.0",
   "summary": "A JSON framework that can deserialize the JSON string into real objects, with 0.1 configuration.",
   "description": "On top of yajl-objc, YAJL-Entity deserialize the JSON string directly into Objective-C objects, as opposed to what you get from most other libraries: NSDictionary or NSData. Which makes your models as clean as possible.",
-  "homepage": "https://github.com/Xenofex/YAJL-Entity",
+  "homepage": "https://github.com/Jinxiaoming/YAJL-Entity",
   "license": {
     "type": "MIT"
   },
   "authors": {
-    "Eli Wang": "sirxenofex@gmail.com"
+    "Eli Wang": "sirxenofex@gmail.com",
+    "Xiaoming": "jin.xiaoming@ekohe.com"
   },
   "platforms": {
-    "ios": null
+    "ios": "9.0"
   },
   "dependencies": {
-    "yajl-objc": [
-      "~> 0.2.27"
+    "YAJLO": [
+      "~> 0.3.3"
     ]
   },
   "source": {
-    "git": "https://github.com/Xenofex/YAJL-Entity.git",
-    "tag": "v1.0.3",
+    "git": "https://github.com/Jinxiaoming/YAJL-Entity.git",
+    "tag": "v1.1.0",
     "submodules": true
   },
   "source_files": "YAJL-Entity/*.{h,m}",

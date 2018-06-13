@@ -22,7 +22,10 @@
 
 #import <Foundation/Foundation.h>
 #import "NSObject+Properties.h"
-#import "YAJL.h"
+#import "YAJLO/NSObject+YAJL.h"
+#import "YAJLO/YAJLDocument.h"
+#import "YAJLO/YAJLGen.h"
+#import "YAJLO/YAJLParser.h"
 #import "NSObject+YAJLizable.h"
 
 @interface YAJLObjectParser : NSObject <YAJLParserDelegate> {
@@ -35,9 +38,9 @@
 	// Note for developer: __weak mark does NOTHING in a reference count runtime.
 	// iOS only have the reference count runtime, thus __weak does NOTHING in iOS
 	id dict_; // weak; if map in progress, points to the current map 
-	__weak NSMutableArray *array_;  // weak; If array in progress, points the current array
-	__weak NSString *key_;          // weak; If map in progress, points to current key
-	__weak Class arrayType_;        // If the current object is an array, this is the type of the objects
+	NSMutableArray *array_;  // weak; If array in progress, points the current array
+	NSString *key_;          // weak; If map in progress, points to current key
+	Class arrayType_;        // If the current object is an array, this is the type of the objects
                                     // in the array
     
 	NSMutableArray *stack_;

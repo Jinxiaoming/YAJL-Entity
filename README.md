@@ -9,7 +9,7 @@ I've been using this for 3 years, in a bunch of different projects, most of whic
 [CocoaPods](https://github.com/cocoapods/cocoapods) preferred now. In your `Podfile`:
 
 ```ruby
-pod 'YAJL-Entity'
+pod 'YAJL-Entity-V2'
 ```
 
 # A Short Demo
@@ -38,14 +38,14 @@ In `MyEntity.m`, the following code:
 {
     if ((self = [super initForYAJL])) {
 	// Assign the class object to the array property as a hint.
-	// It will be safely removed after the deserialization process. 
+	// It will be safely removed after the deserialization process.
         self.addresses = (NSArray *)[MyAddress class];
     }
-    
+
     return self;
 }
 ```
-is required to make the array work. 
+is required to make the array work.
 
 By looking into the defination of the class MyEntity you can find that it has 2 array properties, one of which contains custom objects while the other contains primitives, and one property of other model class. So this is enough for most of the situations.
 
